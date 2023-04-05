@@ -1,0 +1,19 @@
+{
+  "files.exclude": {
+    "**/.git": false
+  },
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "numso.prettier-standard-vscode",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  }
+}

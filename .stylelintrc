@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-prettier-scss",
+    "stylelint-config-standard",
+    "stylelint-config-recess-order"
+  ],
+  "plugins": [
+    "stylelint-value-shorthand"
+  ],
+  "rules": {
+    "selector-qualifying-element": {
+      "noElementWithClass": true,
+      "noElementWithId": true,
+      "noElementWithAttribute": true
+    },
+    "value-shorthand": true,
+    "max-nesting-depth": 2,
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "color-no-invalid-hex": true
+  }
+}
