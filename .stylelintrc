@@ -5,19 +5,16 @@
     "stylelint-config-standard",
     "stylelint-config-recess-order"
   ],
-  "plugins": [
-    "stylelint-value-shorthand"
-  ],
   "rules": {
-    "selector-qualifying-element": {
-      "noElementWithClass": true,
-      "noElementWithId": true,
-      "noElementWithAttribute": true
-    },
-    "value-shorthand": true,
+    "selector-no-qualifying-type": null,
     "max-nesting-depth": 2,
-    "color-hex-case": "lower",
-    "color-hex-length": "short",
-    "color-no-invalid-hex": true
+    "color-hex-length": "long",
+    "color-no-invalid-hex": true,
+    "at-rule-no-unknown": null,
+    "function-no-unknown": null,
+    "value-keyword-case": null,
+    "import-notation": "string",
+    "selector-class-pattern": null,
+    "no-invalid-position-at-import-rule": null
   }
 }

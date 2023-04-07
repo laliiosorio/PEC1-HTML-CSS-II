@@ -1,0 +1,55 @@
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: $content-width;
+  min-height: 400px;
+  padding: $body-padding-sm;
+  margin: 0 auto;
+  background-color: $secondary;
+
+  .quote__text {
+    position: relative;
+    padding: 0.35em 2.5em;
+    font-family: $font-family-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.45;
+    color: $primary;
+  }
+
+  .quote__text::before {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    display: block;
+    padding-left: 8px;
+    font-size: 90px;
+    color: $red;
+    content: '\201C';
+  }
+
+  .quote__cite {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: $red;
+  }
+
+  .quote__cite::before {
+    content: '\2014 \2009';
+  }
+
+  @media (min-width: $mq-tablet) {
+    padding: $body-padding-md;
+
+    .quote__text {
+      max-width: 600px;
+    }
+  }
+
+  @media (min-width: $mq-desktop-sm) {
+    padding: $body-padding-lg;
+  }
+}

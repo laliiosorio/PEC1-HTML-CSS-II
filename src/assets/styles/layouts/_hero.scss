@@ -1,0 +1,75 @@
+.hero {
+  position: relative;
+  width: 100%;
+}
+
+.hero__image {
+  width: 100vw;
+  max-width: $content-width;
+  height: 100vh;
+  margin: 0 auto;
+  background: url('../images/8.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: $content-width;
+  padding: $body-padding-sm;
+  transform: translate(-50%, -50%);
+
+  .text__data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 80vh;
+    color: $white;
+
+    h1 {
+      font-size: 80px;
+      font-weight: 800;
+      line-height: 80px;
+    }
+
+    p {
+      margin-top: 1em;
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: $mq-tablet) {
+    .text__data h1 {
+      font-size: 120px;
+      line-height: 100px;
+    }
+
+    .text__data p {
+      font-size: 34px;
+    }
+  }
+
+  .text__btn {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+    color: $white;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+  }
+
+  @media (min-width: $mq-tablet) {
+    padding: $body-padding-md;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $mq-desktop-sm) {
+    padding: $body-padding-lg;
+  }
+}

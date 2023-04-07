@@ -1,0 +1,62 @@
+/* --- 'Swiper' Carousel --- */
+.swiper {
+  width: $content-width;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+@media (min-width: $mq-tablet) {
+  .swiper-slide img {
+    height: 80vh;
+  }
+}
+
+/* --- Previous & Next Buttons --- */
+
+.swiper-button-prev.btn-style::after,
+.swiper-button-next.btn-style::after {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  opacity: 0.7;
+}
+
+/* --- Progress Bar --- */
+
+.carousel-progress {
+  position: relative;
+  z-index: 1 !important;
+  max-width: $content-width;
+  height: 8px;
+  margin: -8px auto 0;
+  background-color: $secondary;
+}
+
+.progress {
+  position: absolute;
+  height: 8px;
+  background-color: $primary;
+  animation-name: progress;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}

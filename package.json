@@ -11,8 +11,7 @@
     "build": "npm-run-all clean stylelint parcel:build",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'",
     "stylelint": "stylelint src/**/*.scss",
-    "lint:fix": "npm run lint -- --fix",
-    "stylelint:check": "stylelint-config-prettier-scss-check"
+    "lint:fix": "npx stylelint **/*.scss --fix"
   },
   "web": "dist/index.html",
   "targets": {
@@ -52,6 +51,7 @@
     "stylelint-config-standard": "^32.0.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.4.0",
     "stylelint-config-recess-order": "^4.0.0",
     "stylelint-scss": "^4.6.0",
     "stylelint-selector-qualifying-element": "^1.0.4",

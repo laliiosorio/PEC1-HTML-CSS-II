@@ -7,13 +7,15 @@
  * Import variables
  */
 
-@import "variables";
+@import 'variables', 'functions';
 
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
+
+@import 'npm:@fortawesome/fontawesome-free/css/all.css';
 
 // @import "some-node-module";
 // @import "@some-company/some-node-module";
@@ -23,7 +25,14 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "layouts/home";
+@import 'layouts/home';
+@import 'layouts/hero';
+@import 'layouts/about';
+@import 'layouts/quote';
+@import 'layouts/carousel';
+@import 'layouts/more';
+@import 'layouts/footer';
+@import 'layouts/header';
 
 /**
  * Do NOT include anything else in this file!
